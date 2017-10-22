@@ -31,7 +31,7 @@ This repository is maintained by Jacob Levernier (<j@adunumdatum.org>).
 	- Therefore, I would not yet recommend using this for data that are so sensitive it would be a problem if they leaked (for example, if a user were able to read the location of the full dataset).
 	- I also am not sure how secure the configuration setting's `valid_administrator_keys` setting is. Thus, consider the "admin mode" (which allows looking up multiple users at once) a weak lock on the dataset.
 - Users are able to look each other up.  
-  This can be a pro or con, depending on your organization's needs and the nature of the data. For the app's original use-case, that of a martial arts dojo, the existing systems (including paper calendars) already allowed students to check each other's progress; thus, allowing this in this digital system was seen as fine.
+  This can be a pro or con, depending on your organization's needs and the nature of the data. For the app's original use-case, that of a martial arts dojo, existing systems (including paper calendars) already allowed students to check each other's progress; thus, allowing this in this digital system was seen as fine.
 
 ## Using this Shiny app
 
@@ -44,11 +44,11 @@ The dataset is expected to be a single spreadsheet comprising two columns, named
 
 Each row is expected to be a check-in from an individual. Thus, three rows of a dataset might look like this:
 
-|      Timestamp      |   Name   |
-|---------------------|----------|
-| 10/18/2017 13:06:22 | Jane Doe |
-| 10/18/2017 13:22:22 | John Doe |
-| 10/19/2017 15:00:22 | Jane Doe |
+|      Timestamp      |    Name    |
+|---------------------|------------|
+| 10/18/2017 13:06:22 | Jane Doe   |
+| 10/18/2017 13:22:05 | John Adams |
+| 10/19/2017 15:00:43 | Jane Doe   |
 
 ### Trying out and developing on this app locally
 
