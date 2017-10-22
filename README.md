@@ -10,6 +10,8 @@ By default, it allows the user to look up one name at a time. An "administrator 
 
 ![Example screenshot 2](example_screenshots/screenshot2.png)
 
+![Example screenshot 2](example_screenshots/screenshot3.png)
+
 ### Pros and cons of using this app
 
 #### Pros
