@@ -6,11 +6,11 @@ library(ggplot2)
 
 source("configuration_settings.R")  # Get our configuration settings
 
-load_google_sheets_data <- function(
-  sheet_location = google_sheet_location
+spreadsheet_data <- function(
+  sheet_location = spreadsheet_location
 ){
   if (load_from_google_sheets == TRUE){
-    google_sheet_data <- gs_read(
+    sheet_data <- gs_read(
       gs_url(
         sheet_location,
         visibility = 'public'
@@ -19,7 +19,7 @@ load_google_sheets_data <- function(
     )
   } else {
     # Read from a CSV:
-    google_sheet_data <- read.csv(
+    sheet_data <- read.csv(
       sheet_location,
       stringsAsFactors = FALSE
     )
@@ -31,37 +31,37 @@ load_google_sheets_data <- function(
   # format(mdy_hms('10/11/2017 10:38:36'), format = "%Y-%m-%d")
   
   # Use just a subset of the data:
-  google_sheet_data <- google_sheet_data[
+  sheet_data <- sheet_data[
     ,  # Use all rows
     c("Timestamp", "Name")
   ]
   
-  google_sheet_data$Date <- as.character(format(
-    strptime(google_sheet_data$Timestamp, format = "%m/%d/%Y %H:%M:%S"),
+  sheet_data$Date <- as.character(format(
+    strptime(sheet_data$Timestamp, format = "%m/%d/%Y %H:%M:%S"),
     format = "%m/%d/%Y"
   ))
   
-  google_sheet_data$Month <- as.character(format(
-    mdy(google_sheet_data$Date),
+  sheet_data$Month <- as.character(format(
+    mdy(sheet_data$Date),
     format = "%Y-%m"
   ))
-  google_sheet_data$Day_of_Week <- as.character(format(
-    mdy(google_sheet_data$Date),
+  sheet_data$Day_of_Week <- as.character(format(
+    mdy(sheet_data$Date),
     format = "%A"
   ))
   
   # Remove duplicates from the dataset, since only one check-in per day is
   # supposed to count:
   if (only_count_one_signin_per_day_per_person == TRUE) {
-    google_sheet_data <- google_sheet_data[
+    sheet_data <- sheet_data[
       !duplicated(
-        google_sheet_data[, c("Date", "Name")]
+        sheet_data[, c("Date", "Name")]
       )
       , # Use all columns
     ]
   }
   
-  return(as.data.frame(google_sheet_data))
+  return(as.data.frame(sheet_data))
 }
 
 get_milliseconds_from_minutes <- function(minutes){
@@ -141,7 +141,7 @@ shinyServer(function(input, output, session) {
     )
   })
   
-  dataset <- load_google_sheets_data()  # Declare this dataset initially
+  dataset <- spreadsheet_data()  # Declare this dataset initially
     # (we'll reload it later)
   
   observe({
@@ -152,7 +152,7 @@ shinyServer(function(input, output, session) {
     # Do something each time this is invalidated.
     # The isolate() makes this observer _not_ get invalidated and re-executed
     # when input$n changes.
-    dataset <- load_google_sheets_data()
+    dataset <- spreadsheet_data()
   })
   
   output$last_updated_time <- renderText({

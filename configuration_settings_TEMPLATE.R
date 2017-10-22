@@ -4,9 +4,9 @@ timezone <- 'America/New_York'
 logo_location <- 'path/to/logo'
 
 # Note WELL: If you are using Google Sheets: Per https://github.com/jennybc/googlesheets/issues/272#issuecomment-242977476, a sheet needs to be "Published to the web via the File menu... Merely being Public on the web, via the share button in upper right corner, is not enough to permit API access." You then ALSO need to click the "Share" button, click "Get a shareable link," and select "anyone with the link can view." Then paste that sharing link below, and set 'load_from_google_sheets' below to TRUE.
-google_sheet_location <- 'https://docs.google.com/spreadsheets/d/a1b2c3d4e5/'
+spreadsheet_location <- 'https://docs.google.com/spreadsheets/d/a1b2c3d4e5/'
 
-load_from_google_sheets <- TRUE  # If this is FALSE, the google_sheet_location
+load_from_google_sheets <- TRUE  # If this is FALSE, the spreadsheet_location
 # will be assumed to be the location of a CSV.
 
 only_count_one_signin_per_day_per_person <- TRUE
