@@ -11,6 +11,16 @@ load_from_google_sheets <- TRUE  # If this is FALSE, the google_sheet_location
 
 only_count_one_signin_per_day_per_person <- TRUE
 
+# By default, create an ordered list (ol) that contains several
+# list items (li). This will be displayed at the bottom of the app's
+# sidebar.
+information_about_this_page <- tagList(
+  tags$ol(
+    tags$li("This app is open-source software. It is written in ", tags$a("R", href = "https://www.r-project.org", title = "The R language homepage"), "."),
+    tags$li("You can contact the developers about bugs or contributing at ", tags$a("https://www.github.com/publicus/r-shiny-attendance-checker", href = "https://www.github.com/publicus/r-shiny-attendance-checker", title = "The project's GitHub page"), ".")
+  )
+)
+
 # As many strings as you like for activating "administrator mode", which
 # allows selecting more than one person at a time. For the key 'example1',
 # the app URL to activate administrator mode would be
@@ -18,6 +28,6 @@ only_count_one_signin_per_day_per_person <- TRUE
 # To generate a random key string, you can use the following:
 # stringi::stri_rand_strings(n = 1, length = 20, pattern="[A-Za-z0-9]")
 valid_administrator_keys <- c(
-  'test1',
-  'test2'
+  'example1',
+  'example2'
 )

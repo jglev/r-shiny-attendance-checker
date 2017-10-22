@@ -40,10 +40,8 @@ shinyUI(
         ),
         hr(),
         h4('Information about this page:'),
-        tags$ol(
-          tags$li("This app is open-source software. It is written in ", tags$a("R", href = "https://www.r-project.org", title = "The R language homepage"), "."),
-          tags$li("You can contact the developers about bugs or contributing at ", tags$a("https://www.github.com/publicus/r-shiny-attendance-checker", href = "https://www.github.com/publicus/r-shiny-attendance-checker", title = "The project's GitHub page"), ".")
-        )
+        information_about_this_page  # This is set in the 
+          # configuration settings
       ),
       mainPanel(
         column(
