@@ -12,15 +12,19 @@ By default, it allows the user to look up one name at a time. An "administrator 
 
 ![Example screenshot 2](example_screenshots/screenshot3.png)
 
-### Pros and cons of using this app
+## Current maintainer
 
-#### Pros
+This repository is maintained by Jacob Levernier (<j@adunumdatum.org>).
+
+## Pros and cons of using this app
+
+### Pros
 
 - This app is free and open-source software
 - It is easy to deploy through [ShinyApps.io](https://shinyapps.io "ShinyApps.io") (see below)
 - It can be used with a Google Form for sign-in and a Google Sheet for data storage. Therefore, it can be used without the need for a server administrator or database manager.
 
-#### Cons
+### Cons
 
 - If the data are stored in Google Sheets, the individuals represented in the dataset need to be comfortable with Google storing their data.
 - I'm not sure yet how secure Shiny is as a platform. Therefore, I would not yet recommend using this for data that are so sensitive it would be a problem if they leaked (for example, if a user were able to read the location of the full dataset).
@@ -123,4 +127,4 @@ If you would like to contribute to this repository, please follow these steps:
     1. Make a fork of this repository (from this repository's page on GitHub, click "Fork").
     1. Create a single commit that contains all of the changes that you would like to share (either by "squashing" your commits (see [here](http://stackoverflow.com/a/5189600 'StackOverflow: Squash my last X commits together using Git'), for example), or by just copying your altered files into a fresh copy of this repository).
     1. Make a pull request through GitHub (from your copy of the repository in GitHub, click "New Pull Request").
-1. If you do not feel comfortable using Git: Send an email to the current repository maintainers listed [above](#current-maintainers 'Current maintainers'); we will work together to get your changes incorporated, and will add you to the [list of contributors](#contributors "List of contributors") in this Readme. We will also add you (for any affected versions of the dataset) to the example citation in the `CITATION.txt` file.
+1. If you do not feel comfortable using Git: Send an email to the current repository maintainer listed [above](#current-maintainer 'Current maintainer'); we will work together to get your changes incorporated, and will add you to a list of contributors in this Readme.
