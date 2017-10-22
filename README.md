@@ -1,4 +1,4 @@
-# An Attendance Checker in [Shiny](https://github.com/rstudio/shiny/ "Shiny GitHub Page")
+# An Attendance Checker written for [Shiny](http://shiny.rstudio.com/ "Shiny GitHub Page")
 
 ## What this app does
 
@@ -101,7 +101,7 @@ rsconnect::deployApp('.', appId = AppIDNumberGoesHere)
 
 ### Considerations for using ShinyApps.io
 
-Note that ShinyApps.io's [free tier includes 25 "active hours" per month]() for an app. An "active hour" is an hour during which the app is running and ready to be used, vs. in "standby" mode -- in the latter case, the app will be activated when a user visits the page, which means slightly longer page-load times.
+Note that ShinyApps.io's [free tier includes 25 "active hours" per month](http://www.shinyapps.io/ "ShinyApps main page, including pricing information") for an app. An ["active hour"](https://support.rstudio.com/hc/en-us/articles/217717407-What-is-an-Active-Hour-for-shinyapps-io- "Shiny 'Active Hours' definition") is an hour during which the app is running and ready to be used, vs. in "standby" mode -- in the latter case, the app will be activated when a user visits the page, which means slightly longer page-load times.
 
 The default time to return an app to standby mode on ShinyApps.io is 15 minutes. You can change this setting in the [shinyapps.io admin page](https://www.shinyapps.io/admin/ "ShinyApps.io Admin page").
 
