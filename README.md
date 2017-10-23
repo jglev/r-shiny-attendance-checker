@@ -99,7 +99,7 @@ setwd('/path/to/this/directory')
 rsconnect::deployApp('.')  # Deploy the app that is in the current directory ('.')
 ```
 
-The output from the above command will include an "AppID" from shinyapps.io. You can also look this up in the [shinyapps.io admin page](https://www.shinyapps.io/admin/ "ShinyApps.io Admin page").
+The output from the above command will include an "AppID" from shinyapps.io. You can also look this up in the [ShinyApps.io admin page](https://www.shinyapps.io/admin/ "ShinyApps.io Admin page").
 
 If you make changes to your app and want to publish those changes to ShinyApps.io, you can use the following command:
 
@@ -115,15 +115,15 @@ The default time to return an app to standby mode on ShinyApps.io is 15 minutes.
 
 ## Conditions of use
 
-Please see the `LICENSE.txt` file for license information (i.e., the conditions under which you may reuse this app). The app is released under a ["BSD 3-Clause License"](https://tldrlegal.com/license/bsd-3-clause-license-(revised) "TLDR Legal: 'BSD 3-Clause License (Revised)'"). In summary, this means we have released this app for others to use freely. We would appreciate you making changes you make to the code available back to the community (preferably through this repository).
+Please see the `LICENSE.txt` file for license information (i.e., the conditions under which you may reuse this app). The app is released under a ["BSD 3-Clause License"](https://tldrlegal.com/license/bsd-3-clause-license-(revised) "TLDR Legal: 'BSD 3-Clause License (Revised)'"). In summary, this means that I have released this app for others to use freely. I would appreciate you making changes you make to the code available to the community (preferably through this repository).
 
 If you would like to arrange a different license, please contact Jacob Levernier at <j@adunumdatum.org>.
 
 ## Contributing to this app
 
-We welcome contributions!
+I welcome contributions!
 
-**We also welcome contributions concerning documentation** -- if there are things that you had to work to understand (for example, how to even download these files in the first place), we welcome additional text for a Wiki that we can attach to this repository.
+**I also welcome contributions concerning documentation** -- if there are things that you had to work to understand (for example, how to even download these files in the first place), I welcome additional text for a Wiki that I can attach to this repository.
 
 If you would like to contribute to this repository, please follow these steps:
 
@@ -131,4 +131,4 @@ If you would like to contribute to this repository, please follow these steps:
     1. Make a fork of this repository (from this repository's page on GitHub, click "Fork").
     1. Create a single commit that contains all of the changes that you would like to share (either by "squashing" your commits (see [here](http://stackoverflow.com/a/5189600 'StackOverflow: Squash my last X commits together using Git'), for example), or by just copying your altered files into a fresh copy of this repository).
     1. Make a pull request through GitHub (from your copy of the repository in GitHub, click "New Pull Request").
-1. If you do not feel comfortable using Git: Send an email to the current repository maintainer listed [above](#current-maintainer 'Current maintainer'); we will work together to get your changes incorporated, and will add you to a list of contributors in this Readme.
+1. If you do not feel comfortable using Git: Send an email to the current repository maintainer listed [above](#current-maintainer 'Current maintainer'); I will work together to get your changes incorporated, and will add you to a list of contributors in this Readme.
