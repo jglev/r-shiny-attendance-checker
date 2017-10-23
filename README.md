@@ -21,15 +21,15 @@ This repository is maintained by Jacob Levernier (<j@adunumdatum.org>).
 ### Pros
 
 - This app is free and open-source software
-- It is easy to deploy through [ShinyApps.io](https://shinyapps.io "ShinyApps.io") (see below)
+- It is easy to deploy through [ShinyApps.io](https://www.shinyapps.io "ShinyApps.io") (see below)
 - It can be used with a Google Form for sign-in and a Google Sheet for data storage. Therefore, it can be used without the need for a server administrator or database manager.
 
 ### Cons
 
 - If the data are stored in Google Sheets, the individuals represented in the dataset need to be comfortable with Google storing their data.
 - I'm not sure yet how secure Shiny is as a platform.
-	- Therefore, I would not yet recommend using this for data that are so sensitive it would be a problem if they leaked (for example, if a user were able to read the location of the full dataset).
-	- I also am not sure how secure the configuration setting's `valid_administrator_keys` setting is. Thus, consider the "admin mode" (which allows looking up multiple users at once) a weak lock on the dataset.
+    - Therefore, I would not yet recommend using this for data that are so sensitive it would be a problem if they leaked (for example, if a user were able to read the location of the full dataset).
+    - I also am not sure how secure the configuration setting's `valid_administrator_keys` setting is. Thus, consider the "admin mode" (which allows looking up multiple users at once) a weak lock on the dataset.
 - Users are able to look each other up.  
   This can be a pro or con, depending on your organization's needs and the nature of the data. For the app's original use-case, that of a martial arts dojo, existing systems (including paper calendars) already allowed students to check each other's progress; thus, allowing this in this digital system was seen as fine.
 
