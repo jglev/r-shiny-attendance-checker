@@ -81,7 +81,9 @@ With RStudio installed, perform the following steps:
 
 The easiest way to deploy this app is using a free account at [ShinyApps.io](https://www.shinyapps.io/ "ShinyApps.io").
 
-To do so, you can use the following in R:
+To do so, first create a (free) account at [ShinyApps.io](https://www.shinyapps.io/ "ShinyApps.io"). Then follow the "Getting Started" instructions that ShinyApps.io displays after you log in for the first time.
+
+You can then use the following in R:
 
 ```{r}
 # install.packages('rsconnect')
