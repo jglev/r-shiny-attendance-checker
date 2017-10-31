@@ -54,7 +54,7 @@ Each row is expected to be a check-in from an individual. Thus, three rows of a 
 
 #### Setting up a Google Form
 
-See [this file](setting_up_a_google_form.md "Instructions on setting up a Google Form for use with this Shiny app") for instructions on setting up a Google Form for use with this Shiny app.
+See [this file](setting_up_a_google_form.md "Instructions on setting up a Google Form for use with this Shiny app") for instructions on setting up a Google Form for use with this Shiny app. For testing, you can also use a local CSV file instead of a Google Sheet.
 
 #### Using Shiny
 
