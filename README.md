@@ -123,7 +123,7 @@ The default time to return an app to standby mode on ShinyApps.io is 15 minutes.
 
 ### Social conditions
 
-If you are a martial arts dojo that is interested in using this code, please get in touch with us; we would love to hear from you! This app was built for [Old City Aikido](https://www.oldcityaikido.com/, "Old City Aikido website") in Philadelphia, PA, USA, where chief instructor is Jason Perna, 4th dan, Fukushidoin. We're curious what other dojos are using for attendance tracking, and would be delighted to hear from you.
+If you are a martial arts dojo that is interested in using this code, please get in touch with us; we would love to hear from you! This app was built for [Old City Aikido](https://www.oldcityaikido.com/ "Old City Aikido website") in Philadelphia, PA, USA, where chief instructor is Jason Perna, 4th dan, Fukushidoin. We're curious what other dojos are using for attendance tracking, and would be delighted to hear from you.
 
 ### Legal conditions
 
