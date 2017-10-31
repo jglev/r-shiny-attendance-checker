@@ -14,7 +14,7 @@ By default, it allows the user to look up one name at a time. An "administrator 
 
 ## Current maintainer
 
-This repository is maintained by Jacob Levernier (<j@adunumdatum.org>).
+This repository was written by, and is currently maintained by, Jacob Levernier (<j@adunumdatum.org>).
 
 ## Pros and cons of using this app
 
