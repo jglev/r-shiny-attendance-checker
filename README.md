@@ -121,6 +121,12 @@ The default time to return an app to standby mode on ShinyApps.io is 15 minutes.
 
 ## Conditions of use
 
+### Social conditions
+
+If you are a martial arts dojo that is interested in using this code, please get in touch with us; we would love to hear from you! This app was built for [Old City Aikido](https://www.oldcityaikido.com/, "Old City Aikido website") in Philadelphia, PA, USA, where chief instructor is Jason Perna, 4th dan, Fukushidoin. We're curious what other dojos are using for attendance tracking, and would be delighted to hear from you.
+
+### Legal conditions
+
 Please see the `LICENSE.txt` file for license information (i.e., the conditions under which you may reuse this app). The app is released under a ["BSD 3-Clause License"](https://tldrlegal.com/license/bsd-3-clause-license-(revised) "TLDR Legal: 'BSD 3-Clause License (Revised)'"). In summary, this means that I have released this app for others to use freely. I would appreciate you making changes you make to the code available to the community (preferably through this repository).
 
 If you would like to arrange a different license, please contact Jacob Levernier at <j@adunumdatum.org>.
