@@ -6,11 +6,11 @@ This app loads data from either a Google Sheets spreadsheet or CSV file and prov
 
 By default, it allows the user to look up one name at a time. An "administrator mode" enables comparing multiple users.
 
-![Example screenshot 1](example_screenshots/screenshot1.png)
+![Example screenshot 1](example_screenshots/shiny_app/screenshot1.png)
 
-![Example screenshot 2](example_screenshots/screenshot2.png)
+![Example screenshot 2](example_screenshots/shiny_app/screenshot2.png)
 
-![Example screenshot 2](example_screenshots/screenshot3.png)
+![Example screenshot 2](example_screenshots/shiny_app/screenshot3.png)
 
 ## Current maintainer
 
@@ -51,6 +51,12 @@ Each row is expected to be a check-in from an individual. Thus, three rows of a 
 | 10/19/2017 15:00:43 | Jane Doe   |
 
 ### Trying out and developing on this app locally
+
+#### Setting up a Google Form
+
+See [this file](setting_up_a_google_form.md "Instructions on setting up a Google Form for use with this Shiny app") for instructions on setting up a Google Form for use with this Shiny
+
+#### Using Shiny
 
 You will need to install [R](https://r-project.org "R Project") to develop on this app.
 
